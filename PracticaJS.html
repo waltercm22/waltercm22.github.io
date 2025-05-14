@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripción" content="Práctica de JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica JS</title>
+    <link rel="icon" href="imagenes/h.jpg">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <script src="js/miprimerejemploJS.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <img src="Imagenes/javas.png" alt="Icono de la practica de hoy en JS" width="300" height="300">
+        <h1 id="encabezado">PRÁCTICA CON JAVASCRIPT</h1>
+    </header>
+
+    <h2>Menú de opciones</h2>
+    <nav>
+        <ul id="menu">
+            <li>
+                <a href="presentacion.html">Ir a la Segunda Página</a>
+            </li> 
+            <li><a href="Tercera pagina.html">Ir a Tercera Página</a></li>
+            <li><a href="Cuarta pagina.html">Ir a la Cuarta Página</a></li>
+            <li><a href="Quinta pagina.html">Ir a la Quinta Página</a></li>
+            <li><a href="Tablas.html">Ir a la Página de Tablas</a></li>
+            <li><a href="Entregable.html">ENTREGABLE</a></li>
+            <li><a href="Primera pagina.html">Regresar al inicio</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <h2 id="subtitulo">Subtítulo original</h2>
+            <h2 id="subtitulo2">Segundo subtítulo</h2>
+            <h3>Alertas</h3>
+            <button onclick="alert('HOLA MUNDO!!')">Alerta 1</button>
+            <button onclick="alert('ADIOS MUNDO CRUEL!!')">Alerta 2</button>
+            <button onclick="alert('HOLA QUE HACE?')">Alerta 3</button>
+            <button onclick="mostrarMensaje()">Alerta 4 + suma</button>
+
+            <h3>Cambiar fondo con colores intensos</h3>
+            <button onclick="document.body.style.background = '#0d47a1'">Fondo Azul Intenso</button>
+            <button onclick="document.body.style.background = '#c2185b'">Fondo Fucsia Oscuro</button>
+            <button onclick="document.body.style.background = '#1b5e20'">Fondo Verde Oscuro</button>
+            <button onclick="document.body.style.background = '#f57f17'">Fondo Amarillo Mostaza</button>
+
+            <h3>Subtítulos</h3>
+            <button onclick="cambiarColor()">Cambiar color del subtítulo</button>
+            <button onclick="cambiarTexto()">Cambiar texto y fondo del encabezado</button>
+
+            <h3>Estado de ánimo</h3>
+            <img id="estado" src="imagenes/h.jpg" alt="Estado emocional" width="300" height="300"><br><br>
+            <button onclick="feliz()">Feliz</button>
+            <button onclick="triste()">Triste</button>
+        </article>
+
+        <aside>
+            <h3>Descripción</h3>
+            <p>En esta página practicare mejor como funciona lo que es JavaScript al resolver los ejercicios propuestos en clase por el instructor .</p>
+        </aside>
+    </section>
+
+    <footer>
+        <p>© 2025 Todos los Derechos Reservados.</p>
+    </footer>
+
+</body>
+</html>
