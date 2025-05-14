@@ -1,25 +1,26 @@
-function feliz(){
-    document.getElementById('estado').src='images/h.jpg';
-}
-function triste(){
-    document.getElementById('estado').src='images/s.jpg';
+function feliz() {
+    document.getElementById('estado').src = 'imagenes/h.jpg';
+    alert("Ahora te encuentras felizz!! :D");
 }
 
-function cambiarColor(){
-    document.getElementById('subtitulo').style.color='red';
-}
-function cambiarTexto(){
-    //
-    document.getElementById('subtitulo').textContent="YA LE SE AL JS";
-    document.getElementById('encabezado').style.background= '#ff45b6';
-    //document.getElementById('subtitulo').innerHTML="YA LE SE AL JS";
+function triste() {
+    document.getElementById('estado').src = 'imagenes/s.jpg';
+    alert("Oh no, por que estas triste bro? :(");
 }
 
-function mostrarMensaje(){
-    console.log("Hola Mundo");
-    alert("Esto es un Alert o Alerta");
+function cambiarColor() {
+    document.getElementById('subtitulo').style.color = 'red';
+}
+
+function cambiarTexto() {
+    document.getElementById('subtitulo').textContent = "YA LE SÉ AL JS :D";
+    document.getElementById('encabezado').style.background = '#ff45b6';
+}
+
+function mostrarMensaje() {
+    console.log("Hola mundo");
+    alert("HOLA MUNDO TENGAN BUEN DÍA");
     let A = 3;
     let B = 4;
-    alert(A+B);
-    //window.print('Prueba');
+    alert(A + B);
 }
