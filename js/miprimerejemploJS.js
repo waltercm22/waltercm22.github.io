@@ -1,10 +1,10 @@
 function feliz() {
-    document.getElementById('estado').src = 'imagenes/h.jpg';
+    document.getElementById('estado').src = 'Imagenes/h.jpg';
     alert("Ahora te encuentras felizz!! :D");
 }
 
 function triste() {
-    document.getElementById('estado').src = 'imagenes/s.jpg';
+    document.getElementById('estado').src = 'Imagenes/s.jpg';
     alert("Oh no, por que estas triste bro? :(");
 }
 
