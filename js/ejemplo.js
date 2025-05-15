@@ -1,7 +1,7 @@
 document.getElementById("calcular").addEventListener("click", function(){
-    let num1 = parseFloat(document.getElementById("numero1").value);//8
-    let num2 = parseFloat(document.getElementById("numero2").value);//2
-    let operacion = document.getElementById("operacion").value;//suma
+    let num1 = parseFloat(document.getElementById("numero1").value);//numero al azar elegido
+    let num2 = parseFloat(document.getElementById("numero2").value);//numero al azar elegido
+    let operacion = document.getElementById("operacion").value;//suma, resta, multiplica, divide
     let resultado = document.getElementById("resultado");
 //Validacion que no me esta enviando vacios
     if(isNaN(num1)||isNaN(num2)){
