@@ -14,6 +14,11 @@ function calcular(a,b, op){
             return a+b;
         case "resta":
             return a-b;
+        case "multiplicacion":
+            return a*b;
+        case "division":
+            return a/b;
+        
         default:
             return "Operación Inválida"
     }
