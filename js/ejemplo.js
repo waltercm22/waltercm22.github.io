@@ -26,3 +26,26 @@ function calcular(a,b, op){
 let resultadoFinal = calcular(num1,num2,operacion);
 resultado.textContent="El Resultado es: "+resultadoFinal;
 })
+
+//Calculo de descuento a compras mayores a 1000 soles
+function calcularDescuento() {
+    let monto = parseFloat(document.getElementById("montoCompra").value);
+    let resultado = document.getElementById("resultadoDescuento");
+
+    if (isNaN(monto) || monto <= 0) {
+        resultado.textContent = "Por favor, ingrese un monto valido mayoor a cero.";
+        return;
+    }
+
+    let descuento = 0;
+    if (monto > 1000) {
+        descuento = monto * 0.10;
+    }
+
+    let totalPagar = monto - descuento;
+
+    resultado.textContent =
+        "Total sin descuento: S/. " + monto.toFixed(2) +
+        " -- Descuento aplicado: S/. " + descuento.toFixed(2) +
+        " -- Total a pagar: S/. " + totalPagar.toFixed(2);
+}
