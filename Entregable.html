@@ -2,66 +2,187 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="descripción" content="Página en construcción - Entregable">
+    <meta name="descripción" content="Sitio web rediseñado de EcoMarket">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entregable</title>
-    <link rel="icon" href="Imagenes/pagenconstruccion.jpg"> 
+    <title>EcoMarket - Entregable</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/estilos.css">
+    <script src="js/entregable.js" defer></script>
 </head>
 <body>
+    <header class="bg-success text-white text-center py-4">
+        <img src="Imagenes/EcoMarketLogo.png" alt="EcoMarket Logo" class="img-fluid mb-3 logo-ecomarket">
 
-    <header>
-        <img src="Imagenes/pagenconstruccion.jpg" alt="En construcción" width="300" height="300">
-        <h1>PÁGINA EN CONSTRUCCIÓN</h1>
+
+        
+        <h1>Productos orgánicos, frescos y saludables</h1>
     </header>
 
-    <h2>Menú de opciones</h2>
-    <nav>
-        <ul id="menu">
-            
-            <li>
-                <a href="presentacion.html">Ir a la Segunda Página</a>
-            </li> 
-            <li>
-                <a href="Tercera pagina.html">Ir a Tercera Página</a>
-            </li>
-            <li>
-                <a href="Cuarta pagina.html">Ir a la Cuarta Página</a>
-            </li>
-            <li>
-                <a href="Quinta pagina.html">Ir a la Quinta Página</a>
-            </li>
-            <li>
-                <a href="Sextapagina.html">Ir a la Sexta Página</a>
-            </li>
-            <li>
-                <a href="Tablas.html">Ir a la Página de Tablas</a>
-            </li>
-            <li>
-                <a href="PracticaJS.html">Ir a la Página de practica JS</a>
-            </li>
-            <li>
-                <a href="index.html">Regresar al inicio</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="presentacion.html">Segunda Página</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tercera pagina.html">Tercera Página</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Cuarta pagina.html">Cuarta Página</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Quinta pagina.html">Quinta Página</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Sextapagina.html">Sexta Página</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tablas.html">Página de Tablas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="PracticaJS.html">Práctica JS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <section>
-        <article style="text-align: center; padding: 40px;">
-            <img src="Imagenes/pagenconstruccion.jpg" alt="Página en construcción" width="400" height="400">
-            <h2 style="margin-top: 20px;">Esta sección aún está en desarrollo</h2>
-            <p>Estamos trabajando para traerte el contenido lo antes posible. ¡Gracias por tu paciencia!</p>
-        </article>
+    <main class="container mt-4">
+        <section class="text-center mb-5">
+            <h2 class="mb-3">Bienvenido a EcoMarket</h2>
+            <p>Explora nuestros productos naturales y orgánicos para una vida más saludable.</p>
+            <img src="Imagenes/ecobanner.png" alt="Banner EcoMarket" class="img-fluid rounded shadow" style="max-height: 400px; width: 100%; object-fit: cover;">
+        </section>
 
-        <aside>
-            <h3>Estado</h3>
-            <p>Contenido del entregable próximamente disponible.</p>
-        </aside>
-    </section>
+        <section id="productos" class="mb-5">
+            <h3 class="mb-4">Nuestros Productos</h3>
+            <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+         <div class="card-group">
+         <div class="card mx-2">
+         <img src="Imagenes/producto1.jpg" class="card-img-top" alt="Producto 1">
+         <div class="card-body">
+         <h5 class="card-title">Manzanas</h5>
+        <p class="card-text">Frescas y deliciosas manzanas listas para el consumo.</p>
+        <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+        <div class="card mx-2">
+        <img src="Imagenes/producto2.jpg" class="card-img-top" alt="Producto 2">
+        <div class="card-body">
+        <h5 class="card-title">Peras</h5>
+        <p class="card-text">Exquisitas peras listas a su disposición.</p>
+        <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+       <div class="card mx-2">
+       <img src="Imagenes/producto3.jpg" class="card-img-top" alt="Producto 3">
+       <div class="card-body">
+        <h5 class="card-title">Plátanos</h5>
+        <p class="card-text">Plátanos maduros listos para el consumo.</p>
+        <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <footer>
-        <p>© 2025 Todos los Derechos Reservados.</p>
+      <div class="carousel-item">
+      <div class="card-group">
+      <div class="card mx-2">
+      <img src="Imagenes/producto4.jpg" class="card-img-top" alt="Producto 4">
+      <div class="card-body">
+        <h5 class="card-title">Brócoli</h5>
+        <p class="card-text">Brócoli fresco cosechado sin químicos.</p>
+        <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+      <div class="card mx-2">
+      <img src="Imagenes/producto5.jpg" class="card-img-top" alt="Producto 5">
+      <div class="card-body">
+        <h5 class="card-title">Tomates</h5>
+        <p class="card-text">Tomates jugosos perfectos para ensaladas.</p>
+        <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+      <div class="card mx-2">
+      <img src="Imagenes/producto6.jpg" class="card-img-top" alt="Producto 6">
+      <div class="card-body">
+        <h5 class="card-title">Zanahorias</h5>
+        <p class="card-text">Zanahorias crujientes de cultivo responsable.</p>
+        <button class="btn btn-success agregar-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h3>Contáctanos</h3>
+            <form id="formularioContacto" class="row g-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="correo" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="correo" required>
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="mt-5">
+            <h3>Libro de Reclamaciones</h3>
+            <p>Haga clic en el libro para abrir el formulario:</p>
+            <div class="text-center">
+                <img src="Imagenes/libro_reclamaciones.jpg" alt="Libro de Reclamaciones" class="img-fluid rounded shadow" style="cursor:pointer; max-width: 300px;" onclick="document.getElementById('formLibroReclamos').classList.toggle('d-none'); window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});">
+            </div>
+            <div id="formLibroReclamos" class="mt-4 d-none">
+                <form id="libroReclamaciones" class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="dni" class="form-label">DNI</label>
+                            <input type="text" class="form-control" id="dni" pattern="^\d{8}$" required>
+                            <div class="invalid-feedback">Ingrese un DNI válido de 8 dígitos.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="correoReclamo" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correoReclamo" required>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <label for="motivo" class="form-label">Motivo</label>
+                            <select id="motivo" class="form-select" required>
+                                <option value="">Seleccione un motivo</option>
+                                <option value="producto">Producto en mal estado</option>
+                                <option value="entrega">Problemas con la entrega</option>
+                                <option value="servicio">Atención al cliente</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <label for="detalle" class="form-label">Detalle del Reclamo</label>
+                            <textarea class="form-control" id="detalle" rows="4" required></textarea>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <button type="submit" class="btn btn-danger">Enviar Reclamo</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>© 2025 EcoMarket. Todos los derechos reservados.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -166,4 +166,13 @@ footer{
 
 }
 
+.logo-ecomarket {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
 
