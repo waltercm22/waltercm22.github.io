@@ -1,20 +1,4 @@
-// JS para EcoMarket - entregable.js
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Formulario de contacto
-  const formulario = document.getElementById("formularioContacto");
-  formulario.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const nombre = document.getElementById("nombre").value;
-    const correo = document.getElementById("correo").value;
-    if (nombre.trim() === "" || correo.trim() === "") {
-      alert("Por favor, complete todos los campos obligatorios.");
-      return;
-    }
-    alert(`Gracias por contactarte con nosotros, ${nombre}. Te responderemos pronto a ${correo}`);
-    formulario.reset();
-  });
-
   // Estilo de tarjetas al pasar el mouse
   const tarjetas = document.querySelectorAll(".card");
   tarjetas.forEach((card) => {
@@ -66,22 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (boton.dataset.tipo === "mas") {
         input.value = valor + 1;
       }
-    });
-  });
-
-  // Validación del formulario de reclamos
-  const formReclamos = document.querySelectorAll(".needs-validation");
-  Array.from(formReclamos).forEach((form) => {
-    form.addEventListener("submit", (event) => {
-      if (!form.checkValidity()) {
-        event.preventDefault();
-        event.stopPropagation();
-      } else {
-        event.preventDefault();
-        alert("Reclamo enviado correctamente. ¡Gracias por comunicarte con nosotros!");
-        form.reset();
-      }
-      form.classList.add("was-validated");
     });
   });
 });
