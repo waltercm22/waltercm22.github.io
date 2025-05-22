@@ -12,9 +12,9 @@ body {
   padding: 0;
 }
 
-/* HEADER personalizado */
+/* HEADER personalizad*/
 header {
-  background-color: #228B22; /* Verde orgánico */
+  background-color: #228B22; /* Verde */
   text-align: center;
   padding: 20px;
 }
@@ -80,5 +80,14 @@ footer {
 }
 
 .redes-sociales a:hover {
-    color: #80e0a7; /* verde suave al pasar el mouse */
+    color: #80e0a7; /* verde suave */
+}
+
+.metodos-pago img {
+    filter: brightness(0) invert(1); /* pone los logos en blanco si se tienen fondo negro */
+    transition: transform 0.3s ease;
+}
+
+.metodos-pago img:hover {
+    transform: scale(1.1);
 }
